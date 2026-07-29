@@ -63,7 +63,7 @@ const stages: Stage[] = [
     kicker: "Этап 01",
     title: "Неоновый рынок",
     time: "8 минут",
-    map: "./assets/maps/Этап_1_Неоновый_рынок.png",
+    map: "./assets/maps/neon-market.webp",
     goal: "Получить 3 успеха до 2 провалов и найти вход в тоннель.",
     details: [
       "Киоски и контейнеры дают +1 к защите.",
@@ -81,7 +81,7 @@ const stages: Stage[] = [
     kicker: "Этап 02",
     title: "Магнитное метро",
     time: "12 минут",
-    map: "./assets/maps/Этап_2_Магнитное_метро.png",
+    map: "./assets/maps/magnetic-metro.webp",
     goal: "Пережить три раунда или заставить оставшихся врагов отступить.",
     details: [
       "Рекламный экран: Взлом 4, враги получают −1 АТК.",
@@ -100,7 +100,7 @@ const stages: Stage[] = [
     kicker: "Этап 03",
     title: "Зеркало-0",
     time: "11 минут",
-    map: "./assets/maps/Этап_3_Зеркало-0.png",
+    map: "./assets/maps/mirror-zero.webp",
     goal: "Отключить проекторы и победить мини-босса.",
     details: [
       "Первая способность героев в раунде отражается.",
@@ -117,7 +117,7 @@ const stages: Stage[] = [
     kicker: "Этап 04",
     title: "Ядро Башни Нуль",
     time: "19 минут",
-    map: "./assets/maps/Этап_4_Директор_Нуль.png",
+    map: "./assets/maps/director-zero.webp",
     goal: "Снять три сегмента щита и остановить перезапись Люмы.",
     details: [
       "Три генератора соответствуют трём сегментам щита.",
@@ -134,28 +134,28 @@ const stages: Stage[] = [
 const heroes = [
   {
     name: "Штурмовик",
-    image: "./assets/cards/Штурмовик.png",
+    image: "./assets/cards/assault.webp",
     stats: "ОЗ 10 · АТК +2 · ЗАЩ 4 · ЭН 3",
     accent: "cyan",
     abilities: ["Импульсный удар — 3 урона и отбрасывание", "Энергощит — уменьшает урон на 2", "Прорыв — игнорирует броню и иммунитет"],
   },
   {
     name: "Техномант",
-    image: "./assets/cards/Техномант.png",
+    image: "./assets/cards/technomancer.webp",
     stats: "ОЗ 7 · АТК +1 · ЗАЩ 3 · ЭН 4",
     accent: "violet",
     abilities: ["Взлом — робот пропускает ход", "Перегрузка — 3 урона роботу", "Перепрошивка — враг помогает героям"],
   },
   {
     name: "Медик",
-    image: "./assets/cards/Медик.png",
+    image: "./assets/cards/medic.webp",
     stats: "ОЗ 8 · АТК +1 · ЗАЩ 3 · ЭН 4",
     accent: "green",
     abilities: ["Наноремонт — восстановить 3 ОЗ", "Стабилизатор — вернуть героя с 4 ОЗ", "Адреналин — дополнительное действие"],
   },
   {
     name: "Тень",
-    image: "./assets/cards/Тень.png",
+    image: "./assets/cards/shadow.webp",
     stats: "ОЗ 8 · АТК +2 · ЗАЩ 4 · ЭН 3",
     accent: "pink",
     abilities: ["Невидимость — нельзя выбрать целью", "Точный удар — игнорирует броню", "Ложный след — заставляет врага перебросить атаку"],
@@ -163,11 +163,11 @@ const heroes = [
 ];
 
 const enemies = [
-  { name: "Дрон-ищейка", image: "./assets/cards/Дрон-ищейка.png", stats: "ОЗ 4 · АТК +1 · ЗАЩ 3", skill: "Метка: цель получает −1 ЗАЩ." },
-  { name: "Гончая файрвола", image: "./assets/cards/Гончая_файрвола.png", stats: "ОЗ 6 · АТК +2 · ЗАЩ 4", skill: "Файрвол: первый Взлом не действует." },
-  { name: "Глитч-мародёр", image: "./assets/cards/Глитч-мародёр.png", stats: "ОЗ 7 · АТК +2 · ЗАЩ 3", skill: "Глитч: способность цели стоит +1 ЭН." },
-  { name: "Зеркало-0", image: "./assets/cards/Зеркало-0.png", stats: "ОЗ 14 · АТК +2 · ЗАЩ 5", skill: "Отражение: копирует первую способность." },
-  { name: "Директор Нуль", image: "./assets/cards/Директор_Нуль.png", stats: "ОЗ 24 · АТК +3 · ЗАЩ 5", skill: "Три фазы, щиты и смена иммунитетов." },
+  { name: "Дрон-ищейка", image: "./assets/cards/drone.webp", stats: "ОЗ 4 · АТК +1 · ЗАЩ 3", skill: "Метка: цель получает −1 ЗАЩ." },
+  { name: "Гончая файрвола", image: "./assets/cards/firewall-hound.webp", stats: "ОЗ 6 · АТК +2 · ЗАЩ 4", skill: "Файрвол: первый Взлом не действует." },
+  { name: "Глитч-мародёр", image: "./assets/cards/glitch-raider.webp", stats: "ОЗ 7 · АТК +2 · ЗАЩ 3", skill: "Глитч: способность цели стоит +1 ЭН." },
+  { name: "Зеркало-0", image: "./assets/cards/mirror-zero.webp", stats: "ОЗ 14 · АТК +2 · ЗАЩ 5", skill: "Отражение: копирует первую способность." },
+  { name: "Директор Нуль", image: "./assets/cards/director-zero.webp", stats: "ОЗ 24 · АТК +3 · ЗАЩ 5", skill: "Три фазы, щиты и смена иммунитетов." },
 ];
 
 const rollValue = (sides: number) => Math.floor(Math.random() * sides) + 1;
@@ -397,7 +397,12 @@ function BattleMap() {
             </div>
           </div>
           <div className="battle-map" ref={mapRef}>
-            <img src={stage.map} alt={`Тактическая карта: ${stage.title}`} draggable={false} />
+            <img
+              src={stage.map}
+              alt={`Тактическая карта: ${stage.title}`}
+              draggable={false}
+              decoding="async"
+            />
             {tokens.map((token) => (
               <button
                 key={token.id}
@@ -696,7 +701,7 @@ function Cards() {
         {items.map((item) => (
           <article className="character-card" key={item.name}>
             <div className="card-image">
-              <img src={item.image} alt={`Карточка: ${item.name}`} />
+              <img src={item.image} alt={`Карточка: ${item.name}`} loading="lazy" decoding="async" />
             </div>
             <div className="card-copy">
               <h3>{item.name}</h3>
@@ -831,7 +836,12 @@ export default function Home() {
             <span>До перезаписи Люмы</span>
             <strong>{countdown}</strong>
           </div>
-          <img src="./assets/maps/Этап_4_Директор_Нуль.png" alt="Ядро Башни Нуль — финальная карта" />
+          <img
+            src="./assets/maps/director-zero.webp"
+            alt="Ядро Башни Нуль — финальная карта"
+            decoding="async"
+            fetchPriority="high"
+          />
           <div className="scan-line" />
           <div className="floating-label label-one"><i /> Ядро обнаружено</div>
           <div className="floating-label label-two"><i /> Защита: 3 сегмента</div>
